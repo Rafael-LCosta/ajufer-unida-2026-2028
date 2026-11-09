@@ -1,0 +1,9 @@
+services:
+  - type: web
+    runtime: static
+    name: ajufer-unida-2026-2028
+    repo: https://github.com/Rafael-LCosta/ajufer-unida-2026-2028
+    branch: main
+    buildCommand: mkdir -p public && cp index.html public/index.html
+    staticPublishPath: ./public
+    autoDeployTrigger: commit
